@@ -1,1 +1,1 @@
-export { Component } from "./Carousel/";
+export { Layout } from "./Layout";
