@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://nazmulweb.github.io/web-view-app",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -12,9 +14,7 @@
     "format:check": "prettier . --check",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "typecheck": "tsc --noEmit"
   },
   "browserslist": {
     "production": [
