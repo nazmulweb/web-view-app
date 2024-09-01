@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { About, Details } from "./components/pages";
+
 import { Layout } from "./components";
 const router = createBrowserRouter([
   {
@@ -26,9 +28,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Layout>
-      <RouterProvider router={router} />
-    </Layout>
+    <HelmetProvider>
+      <Layout>
+        <RouterProvider router={router} />
+      </Layout>
+    </HelmetProvider>
   </React.StrictMode>,
 );
 
