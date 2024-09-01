@@ -2,6 +2,7 @@
   "name": "flowbite-react-template-cra",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nazmulweb.github.io/web-view-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -11,7 +12,9 @@
     "format:check": "prettier . --check",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [

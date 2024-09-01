@@ -1,4 +1,4 @@
-import { Button, Card, Carousel } from "flowbite-react";
+import { Card, Carousel } from "flowbite-react";
 
 import Img1 from "./assets/1.jpg";
 import Img2 from "./assets/2.jpg";
